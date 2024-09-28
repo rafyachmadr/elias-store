@@ -1,0 +1,222 @@
+:root{
+    --bg-primary: #222;
+    --bg-secondary: #fff;
+    --bg-third: #888;
+    --txt-primary: #0d8f3f;
+    --txt-secondary: #0ccf9e;
+}
+
+*,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fContainer{
+    height: 100vh;
+    width: auto;
+    justify-content: space-between;
+    background-color: var(--bg-primary);
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.first{
+    margin: 5px;
+    color: var(--txt-primary);
+    font-weight: 800;
+}
+
+.last{
+    color: var(--txt-secondary);
+    font-weight: 200;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation>li{
+    list-style-type: none;
+    margin: 2px;
+}
+
+.navigation>li>a{
+    padding: 10px;
+    text-decoration: none;
+    color: crimson;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.navigation>li>a:hover{
+    background-color: var(--bg-third);
+    color: var(--txt-secondary);
+}
+
+.content{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: auto;
+    margin: 10px;
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 10px 5px 5px rgb(0, 0, 0, .5);
+}
+
+.linkContent{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--bg-primary);
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-third);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.linkContent:hover{
+    color: white;
+    background-color: rgb(0, 160, 35);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+/* .radius{
+    padding: 5px;
+} */
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.copyright{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.promotion{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 80px;
+    justify-content: space-between;
+}
+
+.top{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 32px;
+    color: #000;
+}
+
+.bottom{
+    height: 50%;
+    margin: 10px;
+}
+
+@media screen and (min-width: 320`px) and (max-width: 500px) {
+    .fContainer{
+        height: auto;
+        width: auto;
+        background-color: var(--bg-primary);
+    }
+
+    .navigation{
+        visibility: hidden;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+    }
+}
